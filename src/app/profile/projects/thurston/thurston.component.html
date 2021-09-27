@@ -1,0 +1,101 @@
+<app-navbar></app-navbar>
+
+<!-- Content -->
+<div class="container-fluid" id="top">
+  <div class="row py-lg-5">
+    <div class="col-sm-6 offset-sm-3 project-content">
+      <mdb-card>
+        <!-- Project's informations -->
+        <mdb-card-title>
+          <!-- Project Title -->
+          <h2>LE MYSTERE DES 8 GEOMETRIES DE THURSTON</h2>
+          <!-- Project date + duration -->
+          <h4><b>Fin :</b> Juin 2021</h4>
+          <h4><b>Durée :</b> 10 mois</h4>
+        </mdb-card-title>
+        <!-- Project image -->
+        <mdb-card-img class="project-picture" src="assets/LOG_proj.png"></mdb-card-img>
+        <!-- About the project -->
+        <mdb-card-body>
+          <!-- Technologies used -->
+          <div class="row technos">
+            <div class="col-sm-6">
+              <div class="row">
+                <h4><b>Technologies : </b></h4>
+                <img class="dot" src="assets/skills/unity.png"/>
+                <img class="dot" src="assets/skills/c%23.png"/>
+                <img class="dot" src="assets/skills/gitlab.png"/>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="row">
+                <h4><b>Tags : </b></h4>
+                <p> Unity3D, C#, ray-tracing/ray-marching, rendu 3D, temps réel, réalité virtuelle</p>
+              </div>
+            </div>
+          </div>
+          <div class="row description">
+            <!-- Description of the project -->
+            <div class="col-sm-6">
+              <h4><b>Description :</b></h4>
+              <p>
+                Dans le cadre du projet de 4e année de département informatique à l'Insa de Rennes, j'ai eu l'occasion de participer
+                à un projet avec 8 autres camarades. Ce projet intitulé "Le mystère des 8 géométries de Thurston" consistait en
+                la <b>modélisation de scènes en 3D</b> dans chacune des 8 <b>géométries non-euclidiennes</b> (géométries de Thurston).<br>
+                L'objectif était ensuite de pouvoir se déplacer dans ces scènes à l'aide d'un casque de <b>réalité virtuelle</b> ou
+                dans un dispositif de type <b>CAVE</b> (plateforme Immersia à Rennes) et ce en <b>temps-réel</b>. Cette
+                application est basée sur le travail de notre client qui est un chercheur en mathématiques ayant créé un
+                site web permettant de visualiser chacune de ces géométries. <br>
+              </p>
+            </div>
+            <!-- Apports du projet -->
+            <div class="col-sm-6">
+              <h4><b>Bilan :</b></h4>
+              <p>
+                Au travers de ce projet, j'ai pu découvrir les méthodes de rendu en <b>ray-tracing</b> et <b>raymarching</b>.
+                J'ai également pu découvrir le travail dans une équipe plus grande que ce à quoi j'ai été habitué (8 personnes),
+                cela demande énormément d'organisation et d'autant plus dans le contexte du confinement auquel nous avons
+                dû être confrontés. <br>
+                J'ai également particulièrement apprécié la composante abstraction mathématique. Cela a demandé davantage de
+                travail (afin de comprendre comment fonctionnent les géométries) que de simplement coder l'application.<br>
+                Malheureusement, ayant une mobilité en Suède à partir de Janvier, je n'ai pu être présent que lors de la
+                première partie du projet (partie conception/recherche).
+              </p>
+            </div>
+          </div>
+        </mdb-card-body>
+      </mdb-card>
+      <!-- Images of the project -->
+      <!-- TODO: add images from project -->
+      <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
+        <mdb-carousel-item>
+          <img class="d-block w-100" src="assets/projects/thurston/raymarch.PNG" alt="Capture des test de raymarching">
+        </mdb-carousel-item>
+        <mdb-carousel-item>
+          <img class="d-block w-100" src="assets/projects/thurston/minimmersia.jpg" alt="Reconstitution de Immersia à domicile">
+        </mdb-carousel-item>
+        <mdb-carousel-item>
+          <img class="d-block w-100" src="assets/projects/thurston/poucet.PNG" alt="Fonctionnalité d'enregistrement de positions dans scènes">
+        </mdb-carousel-item>
+        <mdb-carousel-item>
+          <img class="d-block w-100" src="assets/projects/thurston/immersia.jpg" alt="Plateforme Immersia">
+        </mdb-carousel-item>
+      </mdb-carousel>
+      <!-- Video TODO: ajouter une vidéo-->
+      <!--<h4 class="video-title"><b>Résultat :</b></h4>
+      <div class="row">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/c7O_dv-8rrw" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                class="video">
+        </iframe>
+      </div>
+      -->
+    </div>
+  </div>
+</div>
+
+<app-projects></app-projects>
+
+
+

@@ -1,0 +1,71 @@
+.title-skills {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 40px;
+  font-size: 30px;
+}
+
+.div-skills {
+  background-color: #D3D3D3;
+}
+
+.name-skill {
+  transform: translateY(0);
+  margin: 20px;
+  font-weight: bolder;
+  font-size: 15px;
+  text-align: right;
+  opacity: 1;
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+.name-skill.not-visible {
+  transform: translateY(20px);
+  margin: 20px;
+  font-weight: bolder;
+  font-size: 15px;
+  text-align: right;
+  opacity: 0;
+}
+
+.bar-skills {
+  opacity: 1;
+  transform: translateX(0) scaleX(1);
+  width: 100%;
+  height: 15px;
+  margin: 20px;
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+.bar-skills.not-visible {
+  opacity: 0;
+  transform: translateX(-100px) scaleX(0.2);
+  width: 100%;
+  height: 15px;
+  margin: 20px;
+}
+
+::ng-deep .mat-progress-bar-fill::after {
+  background-color: coral;
+}
+
+::ng-deep .mat-progress-bar-buffer {
+  background: #e6ebf1;
+}
+
+
+.icon-skills {
+  height: 30px;
+  width: auto;
+  margin-top: 10px;
+  opacity: 1;
+  transform: translateX(0) scaleX(1) rotate(0deg);
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+.icon-skills.not-visible {
+  opacity: 0;
+  transform: translateX(-100px) scaleX(0.2) rotate(80deg);
+  height: 30px;
+  width: auto;
+}

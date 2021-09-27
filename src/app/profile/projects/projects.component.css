@@ -1,0 +1,44 @@
+
+a {
+  color: white;
+}
+
+a:hover {
+   color: white;
+}
+
+.title-project {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+.project-card {
+  height: 100%;
+  max-height: 800px;
+}
+
+mdb-card-body h4 {
+  text-align: center;
+  font-weight: bolder;
+}
+
+mdb-card-body p {
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  color: #666666;
+}
+
+.proj-body {
+  transform: scaleX(1);
+  opacity: 1;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.proj-body.not-visible {
+  opacity: 0;
+  transform: scaleX(0);
+}

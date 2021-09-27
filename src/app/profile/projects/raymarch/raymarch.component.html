@@ -1,0 +1,83 @@
+<app-navbar></app-navbar>
+
+<!-- Content -->
+<div class="container-fluid" id="top">
+  <div class="row py-lg-5">
+    <div class="col-sm-6 offset-sm-3 project-content">
+      <mdb-card>
+        <!-- Project's informations -->
+        <mdb-card-title>
+          <!-- Project Title -->
+          <h2>RAYMARCHING SOUS UNITY</h2>
+          <!-- Project date + duration -->
+          <h4><b>Fin :</b> Novembre 2020</h4>
+          <h4><b>Durée :</b> 1 semaine</h4>
+        </mdb-card-title>
+        <!-- Project image -->
+        <mdb-card-img class="project-picture" src="assets/RAY_proj.PNG"></mdb-card-img>
+        <!-- About the project -->
+        <mdb-card-body>
+          <!-- Technologies used -->
+          <div class="row technos">
+            <div class="col-sm-6">
+              <div class="row">
+                <h4><b>Technologies : </b></h4>
+                <img class="dot" src="assets/skills/unity.png"/>
+                <img class="dot" src="assets/skills/c%23.png"/>
+                <img class="dot" src="assets/skills/github.png"/>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="row">
+                <h4><b>Tags : </b></h4>
+                <p> Unity3D, C#, Rendu 3D, Raymarching, Github</p>
+              </div>
+            </div>
+          </div>
+          <!-- Contenu du projet -->
+          <div class="row description">
+            <!-- Description of the project -->
+            <div class="col-sm-6">
+              <h4><b>Description :</b></h4>
+              <p>
+                Afin de mieux comprendre le fonctionnement des shaders sous Unity, mais surtout pour prendre en main l'algorithme
+                de ray-marching, j'ai suivi une série de vidéos sur le sujet. La série de vidéo a été réalisée par le créateur
+                <b>Peer Play</b> sur la plateforme Youtube :
+                <a href="https://www.youtube.com/watch?v=oPnft4z9iJs&list=PL3POsQzaCw53iK_EhOYR39h1J9Lvg-m-g"> playlist visionnée</a>.
+              </p>
+            </div>
+            <!-- Apports du projet -->
+            <div class="col-sm-6">
+              <h4><b>Bilan :</b></h4>
+              <p>
+                J'ai donc pu réaliser pas à pas une scène sur Unity me permettant de mettre en place le résultat obtenu dans la
+                vidéo disponible ci-dessous. J'ai ainsi pu prendre en main les shaders sous Unity de manière ludique, tout en découvrant
+                davantage le fonctionnement du ray-marching.<br>
+                Le code est disponible sur mon Github au lien suivant : <a href="https://github.com/AleksandreGit/RayMarchUnity">Projet Raymarching</a>
+              </p>
+            </div>
+          </div>
+        </mdb-card-body>
+      </mdb-card>
+      <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
+        <mdb-carousel-item>
+          <img class="d-block w-100" src="assets/projects/raymarching/1.PNG" alt="First slide">
+        </mdb-carousel-item>
+        <mdb-carousel-item>
+          <img class="d-block w-100" src="assets/projects/raymarching/2.PNG" alt="Second slide">
+        </mdb-carousel-item>
+      </mdb-carousel>
+      <h4 class="video-title"><b>Résultat :</b></h4>
+      <div class="row">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gCbqvXOuSeQ" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                class="video"
+                allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-projects></app-projects>
+

@@ -1,0 +1,69 @@
+<app-navbar></app-navbar>
+
+<!-- Content -->
+<div class="container-fluid" id="top">
+  <div class="row py-lg-5">
+    <div class="col-sm-6 offset-sm-3 project-content">
+      <mdb-card>
+        <!-- Project's informations -->
+        <mdb-card-title>
+          <!-- Project Title -->
+          <h2>DETECTION DE PNEUMONIE SUR DES IMAGES X-RAY</h2>
+          <!-- Project date + duration -->
+          <h4><b>Fin :</b> Juin 2021</h4>
+          <h4><b>Durée :</b> 3 mois</h4>
+        </mdb-card-title>
+        <!-- Project image -->
+        <mdb-card-img class="project-picture" src="assets/XRAY_proj.jpeg"></mdb-card-img>
+        <!-- About the project -->
+        <mdb-card-body>
+          <!-- Technologies used -->
+          <div class="row technos">
+            <div class="col-sm-6">
+              <div class="row">
+                <h4><b>Technologies : </b></h4>
+                <img class="dot" src="assets/skills/python.png"/>
+                <img class="dot" src="assets/skills/github.png"/>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="row">
+                <h4><b>Tags : </b></h4>
+                <p>Python, Github</p>
+              </div>
+            </div>
+          </div>
+          <div class="row description">
+            <!-- Description of the project -->
+            <div class="col-sm-6">
+              <h4><b>Description :</b></h4>
+              <p>
+                Dans la cadre du cours "Advanced Deep Learning" suivi lors de mon voyage Erasmus à Luleå, j'ai participé à un projet
+                dans lequel je devais tenter d'utiliser mes connaissances acquises en cours. L'objectif du projet était de pouvoir
+                être capable de détecter si un patient était atteint de <b>pneumonie</b> ou pas à partir d'une image <b>X-Ray</b> de ses poumons. <br>
+                Lors de ce projet, j'ai pu collaborer avec deux camarades Suédois et nous avons décidé de suivre le plan suivant :
+                utiliser dans un premier temps un <b>CNN</b> puis utiliser différentes <b>techniques de visualisation</b> afin de mieux comprendre
+                les données ainsi que l'apprentissage (<b>PCA</b>, <b>t-SNE</b>, visualisation de l'<b>activation</b> sur les images en entrée, ...), pour ensuite
+                tenter d'effectuer la même tâche à l'aide d'une technique de <b>transfer learning</b> (à partir d'un modèle pré-entrainé).<br>
+              </p>
+            </div>
+            <!-- Apports du projet -->
+            <div class="col-sm-6">
+              <h4><b>Bilan :</b></h4>
+              <p>
+                Grâce à ce projet, j'ai pu approfondir mes connaissances en CNN, dans des techniques de Deep Learning
+                un avancées (transfer learning, utilisation de <b>DenseNet</b> et d'<b>EfficientNet</b>) mais j'ai aussi pu comprendre
+                l'importance de la visualisation en Deep Learning. <br>
+                A la suite du projet, nous avons rédigé un papier décrivant le travail effectué, afin d'obtenir
+                l'ensemble des détails du projet vous pouvez télécharger le pdf au <a href="assets/X_Ray_Project.pdf" download>lien suivant</a>.
+              </p>
+            </div>
+          </div>
+        </mdb-card-body>
+      </mdb-card>
+    </div>
+  </div>
+</div>
+
+<app-projects></app-projects>
+

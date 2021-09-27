@@ -1,0 +1,31 @@
+<div class="container-fluid py-lg-5" id="cont">
+  <h2 class="title-contact">Contact</h2>
+  <div class="row">
+    <div class="col-sm-4 offset-sm-4 contact-div">
+      <!-- Formulaire -->
+      <form class="contact" [formGroup]="form" method="post" (ngSubmit)="submitForm()">
+        <mat-form-field>
+          <mat-label>Nom</mat-label>
+          <input matInput [formControl]="name" placeholder="Votre nom" required>
+          <mat-error *ngIf="name.invalid">Veuillez entrer votre nom</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Mail</mat-label>
+          <input matInput [formControl]="email" placeholder="email@example.com" required>
+          <mat-error *ngIf="email.invalid">Veuillez entrer un mail valide</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Message</mat-label>
+          <textarea matInput [formControl]="message" maxlength="2048" placeholder="Votre message (n'oubliez pas d'indiquer le sujet)" required></textarea>
+          <mat-hint align="end"> {{message.value?.length || 0}}/2048</mat-hint>
+          <mat-error *ngIf="message.invalid">Veuillez entrer un message</mat-error>
+        </mat-form-field>
+        <button [disabled]="isLoading" class="submit" type="submit">Envoyer</button>
+        <input [formControl]="honeypot" class="hidden" type="text" />
+        <div [ngClass]="!submitted? 'hidden' : 'visible'" class="center-text">
+          <span>{{responseMessage}}</span>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

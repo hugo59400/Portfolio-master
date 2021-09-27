@@ -1,0 +1,108 @@
+<app-navbar></app-navbar>
+
+<!-- Content -->
+<div class="container-fluid" id="top">
+  <div class="row py-lg-5">
+    <div class="col-sm-6 offset-sm-3 project-content">
+      <mdb-card>
+        <!-- Project's informations -->
+        <mdb-card-title>
+          <!-- Project Title -->
+          <h2>VERIFICATION DU PORT DU MASQUE GRACE AU DEEP LEARNING</h2>
+          <!-- Project date + duration -->
+          <h4><b>Fin :</b> Mars 2020</h4>
+          <h4><b>Durée :</b> 2 semaines</h4>
+        </mdb-card-title>
+        <!-- Project image -->
+        <mdb-card-img class="project-picture" src="assets/COV_proj.jpg"></mdb-card-img>
+        <!-- About the project -->
+        <mdb-card-body>
+          <!-- Technologies used -->
+          <div class="row technos">
+            <div class="col-sm-6">
+              <div class="row">
+                <h4><b>Technologies : </b></h4>
+                <img class="dot" src="assets/skills/python.png"/>
+                <img class="dot" src="assets/skills/github.png"/>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="row">
+                <h4><b>Tags : </b></h4>
+                <p>Python, DeepLearning, Jupyter</p>
+              </div>
+            </div>
+          </div>
+          <div class="row description">
+            <!-- Description of the project -->
+            <div class="col-sm-6">
+              <h4><b>Contexte :</b></h4>
+              <p>
+                Dans le cadre de mon échange Erasmus dans l'université de Luleå en Suède, j'ai participé au cours appelé
+                "Applied Artificial Intelligence". Au cours de ce dernier, j'ai eu l'occasion d'approfondir davantages mes connaissances
+                dans diverses techniques incontournables utilisées dans le domaine du Machine Learning : <b>Réseaux de neurones récurrents </b>,
+                <b>Traitement du language naturel</b>, <b>Réseau de neurones par convolution</b>, ... Mais j'ai également pu découvrir des techniques
+                plus avancées que je n'avais auparavant pas utilisé comme par exemple les <b>SOM</b> (Self-Organized Maps).
+                A la fin de ce cours, l'un des objectifs fut de mettre en place un projet utilisant des concepts vus lors des cours:
+                <b>backpropagation</b>, <b>apprentissage profond</b>, ...
+              </p>
+
+              <h4><b>Présentation du projet :</b></h4>
+              <p>
+                Pour ce projet, j'ai décidé de travailler sur un projet utilisant les <b>CNN</b> (Convolutionnal Neural Networks) car
+                c'est une technique qui m'intéresse beaucoup. J'ai ainsi cherché une base de données sur le site <a href="https://www.kaggle.com/">kaggle</a>
+                contenant des images que je puisse utiliser afin de créer un modèle. Je suis finalement tombé la base de données suivante :
+                <a href="https://www.kaggle.com/andrewmvd/face-mask-detection">Detection de masques</a> qui consiste en une bibliothèque d'images
+                contenant des personnes qui soit portent le masque correctement, soit le portent mal, soit ne le portent pas du tout. <br>
+                Sur chacune de ces images, il y a une ou plusieurs personnes. La base contient également des fichiers au format .XML contenant
+                les coordonnées des découpes de l'image afin de ne garder que les visages des personnes sur l'image globale ainsi que l'étiquettage lié
+                à la personne en question (masque bien porté, masque mal porté ou pas de masque). <br>
+                Afin d'avoir une vue globale du projet, vous pouvez accéder au <a href="assets/Miniproject.ipynb" download>Jupyter du projet</a>.
+              </p>
+            </div>
+            <!-- Apports du projet -->
+            <div class="col-sm-6">
+              <h4><b>Pré-traitement de la base :</b></h4>
+              <p>
+                La première étape du projet fut de <b>pré-traiter</b> la base de données en extrayant chaque face puis en attribuant à ces images les bons labels.
+                Après le traitement, je disposais de deux tableaux : un contenant les images, un second contenant les labels associés. <br>
+                Les images étant de tailles différentes, il a également fallu les redimensionner afin que toutes aient une taille identique.
+                Enfin, afin de classifier les images pour la phase d'entrainement, les labels ont étés encodés en <b>vecteurs one-hot</b>.
+              </p>
+              <h4><b>Phase d'apprentissage :</b></h4>
+              <p>
+                L'architecture choisie pour l'apprentissage fut très simple: 3 couches de convolution chacune suivies d'une rectification à l'aide d'une fonction de
+                Leaky ReLU, d'une couche de MaxPoooling et enfin d'une couche de Dropout (afin d'éviter le sur-apprentissage).<br>
+                Afin d'avoir plus d'informations sur le CNN et aussi davantages de détail sur l'architecture, je vous conseille de jeter un oeil au
+                <a href="assets/Miniproject.ipynb" download>Jupyter du projet</a>. <br>
+                Je détaille également dans ce Notebook comment j'ai étudié différentes architectures afin de trouver celle obtenant les meilleurs
+                résultats possibles.
+              </p>
+              <h4><b>Bilan :</b></h4>
+              <p>
+                Après avoir trouvé la meilleur architecture possible (suite à une série de tests), j'ai décidé de tenter de classifier des photographies
+                prises de moi même portant le masque ou pas. Le résultat obtenu fut le suivant : le modèle est capable de classifier avec une très grande
+                précision les images de personnes portant un masque ou n'en portant pas (précision > 98%), cependant, la plupart des images contenant
+                quelqu'un portant un masque de la mauvaise manière ne sont pas classifiées dans la bonne catégorie. <br>
+                Peut être qu'une augmentation des données pourrait permettre d'obtenir de meilleurs résultats (transformation, ajout de données, ...).
+              </p>
+            </div>
+          </div>
+        </mdb-card-body>
+      </mdb-card>
+      <!-- Images of the project -->
+      <!-- TODO: add images from project -->
+      <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
+        <mdb-carousel-item>
+          <img class="d-block w-100" src="assets/projects/masques/masque_all.PNG" alt="Photo de base">
+        </mdb-carousel-item>
+        <mdb-carousel-item>
+          <img class="d-block w-100" src="assets/projects/masques/results.PNG" alt="Résultats obtenus avec le modèle classique">
+        </mdb-carousel-item>
+      </mdb-carousel>
+    </div>
+  </div>
+</div>
+
+<app-projects></app-projects>
+

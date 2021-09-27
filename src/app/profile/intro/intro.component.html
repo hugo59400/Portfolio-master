@@ -1,0 +1,33 @@
+<!-- Intro header -->
+<!-- Card type, cf : https://mdbootstrap.com/docs/angular/components/cards/ -->
+<mdb-card style="background: url('assets/bg2.png') no-repeat center;">
+    <div class="text-header py-5">
+        <div class="py-3">
+            <!-- Photo de profil -->
+            <img class="profile-picture img-fluid" src="assets/mee.jpg" />
+
+            <!-- Informations -->
+            <h2 class="name-intro">HUGO COLEAU </h2>
+            <p class="desc">Etudiant en 3 eme annee d'informatique à Lille </p>
+
+            <!-- Liens menant à d'autres informations -->
+            <a mdbBtn gradient="sunny-morning" mdbWavesEffect href="#cont" class="link">
+                <mdb-icon fas icon="at" class="left"></mdb-icon> Me contacter</a>
+            <a mdbBtn gradient="sunny-morning" mdbWavesEffect href="assets/cv.pdf" download class="link">
+                <mdb-icon fas icon="book" class="left"></mdb-icon> Télécharger mon CV</a>
+        </div>
+    </div>
+
+    <!-- Adding a footer -->
+    <mdb-card-footer class="bg-dark" style="text-align: center;">
+        <div class="rounded-social-buttons">
+            <a class="social-button linkedin" href="https://fr.linkedin.com/in/hugo-coleau-091429170">
+                <mdb-icon class="social-icon" fab icon="linkedin-in"></mdb-icon>
+            </a>
+            <a class="social-button github" href="https://github.com/hugo59400/">
+                <mdb-icon class="social-icon" fab icon="github"></mdb-icon>
+            </a>
+        </div>
+    </mdb-card-footer>
+
+</mdb-card>

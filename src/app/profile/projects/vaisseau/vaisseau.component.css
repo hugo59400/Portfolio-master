@@ -1,0 +1,62 @@
+
+mdb-card-title {
+  padding-left: 20px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background-color: #24292e;
+  color: white;
+}
+
+mdb-card-title h4{
+  margin-left: 20px;
+}
+
+mdb-card-title h2{
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.technos {
+  background-color: #24292e;
+  padding-top: 10px;
+  padding-left: 10px;
+  color: white;
+}
+.technos p {
+  margin-left: 10px;
+}
+
+.dot {
+  height: 22px;
+  width: auto;
+  margin-left:10px;
+}
+
+mdb-card-img {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.project-content h3{
+  text-align: left;
+  text-emphasis: #24292e;
+}
+
+.description h4 {
+  margin-top: 20px;
+}
+
+.description p {
+  text-align: justify;
+}
+
+.video-title{
+  margin-top: 30px;
+  text-align: center;
+}
+
+.video {
+  margin: auto;
+}
+
